@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Collaboration Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <div class="nav-logo">Zeera</div>
+    <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="nav-link active" onclick="closeMenu()">Home</a></li>
+      <li><a href="assetcollab/14_Izzati Nurazizi {RecountText}.pdf" class="nav-link" target="_blank" onclick="closeMenu()">Experience</a></li>
+      <li><a href="#portfolio" class="nav-link" onclick="closeMenu()">Portfolio</a></li>
+      <li><a href="#contact" class="nav-link" onclick="closeMenu()">Contact</a></li>
+    </ul>
+    <a href="https://www.instagram.com/ur.zizzi?igsh=MTY0a3d0YzFyY3RwMg==&utm_source=ig_contact_invite" class="btn-custom" target="_blank" rel="noopener noreferrer">Follow Me</a>
+  </nav>
+
+  <!-- OVERLAY -->
+  <div class="nav-overlay" id="navOverlay" onclick="closeMenu()"></div>
+
+  <!-- HERO -->
+  <section id="home">
+    <div class="hero-inner">
+      <div class="hero-img-wrap fade-in-up">
+        <img src="assetcollab/ft.png" alt="bg" />
+      </div>
+      <div class="hero-content fade-in-up" style="transition-delay:0.2s">
+        <div class="hero-hi">
+          <span class="hi-text">Hi! </span>
+          <span class="im-text">I'm </span>
+          <span class="name-text">Izzati<br>Nurazizi</span>
+        </div>
+        <p class="hero-desc">
+          A web developer is a professional who creates and maintains websites using
+          programming languages like HTML, CSS, and JavaScript.
+        </p>
+        <div class="hero-btns">
+          <button class="btn-about" onclick="scrollToSection('about')">About</button>
+          <button class="btn-skills" onclick="scrollToSection('about')">Skills</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT + SKILLS -->
+  <section id="about">
+    <div class="about-skills-grid">
+      <div class="glass-card fade-in-up">
+        <div class="card-title">
+          <i class="fas fa-user"></i> About Me
+        </div>
+        <div class="about-text">
+          <p>My name is Izzati Nurazizi Isma Santoso. I was born in Boyolali on October 20, 2009. I am currently studying at SMK Negeri Tengaran, majoring in Software Engineering (RPL). At school, I do not participate in any organizations.</p>
+          <p>I like designing posters, and I usually create them using Canva. However, when designing a landing page, I use Figma.</p>
+        </div>
+      </div>
+      <div class="glass-card fade-in-up" style="transition-delay:0.15s">
+        <div class="card-title">
+          <i class="fas fa-code"></i> My Skills
+        </div>
+        <div class="skill-label"><span>Design</span><span>85%</span></div>
+        <div class="skill-bar-bg"><div class="skill-bar-fill bar-red" style="width:0%" data-width="85%"></div></div>
+        <div class="skill-label"><span>HTML</span><span>85%</span></div>
+        <div class="skill-bar-bg"><div class="skill-bar-fill bar-orange" style="width:0%" data-width="85%"></div></div>
+        <div class="skill-label"><span>CSS</span><span>70%</span></div>
+        <div class="skill-bar-bg"><div class="skill-bar-fill bar-blue" style="width:0%" data-width="70%"></div></div>
+        <div class="skill-label"><span>JS</span><span>20%</span></div>
+        <div class="skill-bar-bg"><div class="skill-bar-fill bar-yellow" style="width:0%" data-width="20%"></div></div>
+        <div class="skill-label"><span>Bootstrap</span><span>87%</span></div>
+        <div class="skill-bar-bg"><div class="skill-bar-fill bar-purple" style="width:0%" data-width="87%"></div></div>
+        <div class="skill-icons">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" title="HTML5"/>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" title="CSS3"/>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" title="JavaScript"/>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" title="Bootstrap"/>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" title="Figma"/>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="experience-grid">
+      <div class="exp-card-left">
+        <div class="exp-item fade-in-up">
+          <div class="exp-item-icon"><i class="bi bi-pc-display-horizontal"></i></div>
+          <div class="exp-item-text">
+            <h4>Design</h4>
+            <p>Design is the process of creating and planning something to achieve a specific purpose. It combines creativity and functionality to produce solutions that are both useful and visually appealing.</p>
+          </div>
+        </div>
+        <div class="exp-item fade-in-up" style="transition-delay:0.1s">
+          <div class="exp-item-icon"><i class="bi bi-globe"></i></div>
+          <div class="exp-item-text">
+            <h4>Web Design</h4>
+            <p>Website design is the process of creating the layout and appearance of a website. It focuses on making the website visually attractive, easy to use, and accessible for users.</p>
+          </div>
+        </div>
+      </div>
+      <div class="stat-card fade-in-up" style="transition-delay:0.05s">
+        <div class="stat-number">10+</div>
+        <div class="stat-label">Design Poster</div>
+      </div>
+      <div class="stat-card fade-in-up" style="transition-delay:0.1s">
+        <div class="stat-number">10+</div>
+        <div class="stat-label">Website Tugas</div>
+      </div>
+      <div class="stat-card fade-in-up" style="transition-delay:0.15s">
+        <div class="stat-number">20+</div>
+        <div class="stat-label">Project Done</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section id="portfolio">
+    <div class="section-badge">My Work</div>
+    <h2 class="section-title">Portfolio</h2>
+
+    <!-- Row 1: 3 cards -->
+    <div class="portfolio-grid">
+      <!-- Card 1 -->
+      <div class="portfolio-card fade-in-up">
+        <div class="portfolio-thumb" id="thumb-1">
+          <img src="" alt="Website 1" id="img-1" style="display:none;" />
+          <div class="placeholder" id="placeholder-1">
+            <img src="assetcollab/web-technologies-1474x1536.png" alt="bg"/>
+          </div>
+          <label class="upload-label" for="file-1"></label>
+          <input type="file" id="file-1" accept="image/*" onchange="previewImage(this,'img-1','placeholder-1')"/>
+        </div>
+        <div class="portfolio-name">Website 1</div>
+        <div class="portfolio-tech">Ini adalah website pertama yang saya buat dengan kelompok kolaborasi saya pada semester 1.</div>
+        <a href="https://lutfialfaruq25-byte.github.io/websitepvl/" target="_blank" rel="noopener noreferrer" class="btn-view">View Project →</a>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="portfolio-card fade-in-up" style="transition-delay:0.08s">
+        <div class="portfolio-thumb" id="thumb-2">
+          <img src="" alt="Website 2" id="img-2" style="display:none;" />
+          <div class="placeholder" id="placeholder-2">
+            <img src="assetcollab/web-technologies-1474x1536.png" alt="bg"/>
+          </div>
+          <label class="upload-label" for="file-2"></label>
+          <input type="file" id="file-2" accept="image/*" onchange="previewImage(this,'img-2','placeholder-2')"/>
+        </div>
+        <div class="portfolio-name">Website 2</div>
+        <div class="portfolio-tech">Website kedua yang saya buat, bertemakan sekolah.</div>
+        <a href="https://zeeeja09-glitch.github.io/projek2/" target="_blank" rel="noopener noreferrer" class="btn-view">View Project →</a>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="portfolio-card fade-in-up" style="transition-delay:0.16s">
+        <div class="portfolio-thumb" id="thumb-3">
+          <img src="" alt="Website 3" id="img-3" style="display:none;" />
+          <div class="placeholder" id="placeholder-3">
+            <img src="assetcollab/web-technologies-1474x1536.png" alt="bg"/>
+          </div>
+          <label class="upload-label" for="file-3"></label>
+          <input type="file" id="file-3" accept="image/*" onchange="previewImage(this,'img-3','placeholder-3')"/>
+        </div>
+        <div class="portfolio-name">Website 3</div>
+        <div class="portfolio-tech">Website ketiga saya, website ini bertema lingkungan.</div>
+        <a href="https://nurazizizizizi-cell.github.io/projek3.zizi/" target="_blank" rel="noopener noreferrer" class="btn-view">View Project →</a>
+      </div>
+    </div>
+
+    <!-- Row 2: 2 cards -->
+    <div class="portfolio-row2">
+      <div class="portfolio-card fade-in-up">
+        <div class="portfolio-thumb" id="thumb-4">
+          <img src="" alt="Website 4" id="img-4" style="display:none;" />
+          <div class="placeholder" id="placeholder-4">
+            <img src="assetcollab/web-technologies-1474x1536.png" alt="bg"/>
+          </div>
+          <label class="upload-label" for="file-4"></label>
+          <input type="file" id="file-4" accept="image/*" onchange="previewImage(this,'img-4','placeholder-4')"/>
+        </div>
+        <div class="portfolio-name">Website 4</div>
+        <div class="portfolio-tech">Website keempat saya, website ini terinspirasi dari referensi yang saya cari.</div>
+        <a href=" https://zeeeja09-glitch.github.io/tugas4/" target="_blank" rel="noopener noreferrer" class="btn-view">View Project →</a>
+      </div>
+
+      <div class="portfolio-card fade-in-up" style="transition-delay:0.08s">
+        <div class="portfolio-thumb" id="thumb-5">
+          <img src="" alt="Website 5" id="img-5" style="display:none;" />
+          <div class="placeholder" id="placeholder-5">
+            <img src="assetcollab/web-technologies-1474x1536.png" alt="bg"/>
+          </div>
+          <label class="upload-label" for="file-5"></label>
+          <input type="file" id="file-5" accept="image/*" onchange="previewImage(this,'img-5','placeholder-5')"/>
+        </div>
+        <div class="portfolio-name">Website 5</div>
+        <div class="portfolio-tech">Website kelima saya berisi tentang penjualan produk gadget.</div>
+        <a href="https://zeeeja09-glitch.github.io/tugas5/" target="_blank" rel="noopener noreferrer" class="btn-view">View Project →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="contact-inner">
+      <div class="contact-left fade-in-up">
+        <span class="contact-badge">Contact Me</span>
+        <h2 class="contact-title text-dark">Let's Talk!</h2>
+        <div class="contact-info-item">
+          <div class="contact-info-icon"><i class="fas fa-envelope"></i></div>
+          <div class="contact-info-text">zeee.ja09@gmail.com</div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-info-icon"><i class="fas fa-phone"></i></div>
+          <div class="contact-info-text">+62 8234-1850-712</div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-info-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <div class="contact-info-text">Karanggede, Kec. Karanggede, Kab. Boyolali</div>
+        </div>
+      </div>
+      <div class="contact-right fade-in-up" style="transition-delay:0.15s">
+        <form onsubmit="handleSubmit(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label>Full Name</label>
+              <input type="text" placeholder="Name..." />
+            </div>
+            <div class="form-group">
+              <label>Phone Number</label>
+              <input type="text" placeholder="Phone..." />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group full">
+              <label>Email Address</label>
+              <input type="email" placeholder="Email..." />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group full">
+              <label>Message</label>
+              <textarea rows="5" placeholder="Message..."></textarea>
+            </div>
+          </div>
+          <button type="submit" class="btn-send">Send Message →</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <div class="footer-brand-name">Zeera</div>
+        <div class="footer-brand-tagline">Building beautiful websites<br>with passion and purpose.</div>
+      </div>
+      <div>
+        <div class="footer-col-title">About</div>
+        <ul class="footer-links">
+          <li><a href="#home">Design</a></li>
+          <li><a href="#about">Skills</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Blog</div>
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Contact</div>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/ur.zizzi?igsh=MTY0a3d0YzFyY3RwMg==&utm_source=ig_contact_invite" target="_blank"><i class="bi bi-instagram"></i></a>
+          <a href="https://wa.me/qr/J4YOVLKVB6S5H1" target="_blank"><i class="bi bi-whatsapp"></i></a>
+          <a href="https://www.tiktok.com/@.raa4uuu?_r=1&_t=ZS-96Ht2cH3ns1" target="_blank"><i class="bi bi-tiktok"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copy">@2024 Zeera web. All Right reserved</div>
+  </footer>
+
+  <!-- Scroll to top -->
+  <button id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Scroll to top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
